@@ -5,40 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 
 <body>
-
-    <!-- Header section -->
-
-    <header class="header">
-        <div class="container header__container">
-
-        </div>
-    </header>
-
-    <!-- Main -->
-
     <main>
-        <section class="">
-            <div class="container">
-
+        <div class="container main__container">
+            <div class="input-group">
+                <label for="name">
+                    <span>Name</span>
+                    <input type="text" placeholder="Name" id="name">
+                </label>
+                <label for="age">
+                    <span>Age</span>
+                    <input type="text" placeholder="Age" id="age">
+                </label>
+                <label for="email">
+                    <span>Email</span>
+                    <input type="text" placeholder="Email" id="email">
+                </label>
+                <input type="submit" id="submit" value="Submit">
             </div>
-        </section>
-
-        <section class="">
-            <div class="container">
-
+            <table id="table">
+                <thead class="thead">
+                    <th>№</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="editing-section">
+                <input type="text" id="change-info">
+                <input id="save-changes" type="submit" value="Save changes">
+                <button class="cancel">Cancel</button>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container footer__container">
-
         </div>
-    </footer>
+    </main>
 </body>
+<script src="./JS/index.js"></script>
 
 </html>

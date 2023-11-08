@@ -390,6 +390,132 @@ th {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  padding-right: 80px;
+  padding-left: 80px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  min-height: 100vh;
+  padding-top: 100px;
+  position: relative;
+}
+
+#table {
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 40px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+label input {
+  padding: 5px;
+}
+
+#submit {
+  font-size: 2rem;
+  padding: 1rem 1.25rem;
+  background: rgb(9, 161, 9);
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 4px 1px green;
+  transition: all 0.2s ease-in;
+}
+
+#submit:hover {
+  background-color: green;
+}
+
+#table {
+  font-size: 1.5rem;
+}
+
+.delete-button {
+  background-color: rgb(255, 65, 65);
+  border: none;
+  color: white;
+  padding: 2px 3px;
+  transition: 0.2s ease-in all;
+  border-radius: 3px;
+}
+
+.delete-button:hover {
+  background-color: red;
+}
+
+.edit-button {
+  background-color: rgb(60, 60, 249);
+  color: white;
+  transition: all 0.2s ease-in;
+  border: none;
+  border-radius: 3px;
+
+}
+
+.edit-button:hover {
+  background-color: blue;
+}
+
+.editing-section {
+  position: absolute;
+  top: 10vh;
+  height: 80vh;
+  width: 80vw;
+  left: 10vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px 1px black;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-size: 3rem;
+  display: none;
+}
+
+#save-changes {
+  padding: 10px;
+  color: white;
+  background-color: rgb(64, 64, 255);
+  transition: all 0.2s ease-in;
+}
+
+#change-info {
+  padding: 10px 20px;
+}
+
+.cancel {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 10vh;
+  color: white;
+  background-color: red;
+  border: none;
+  padding: 10px 20px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-none {
+  display: none;
+}
